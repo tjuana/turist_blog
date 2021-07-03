@@ -6,7 +6,7 @@ export const Applo = (props) => {
     return(
         <div style={{background: 'red'}}>
             <h1>
-            Hello World
+                Hello World
             </h1>
         </div>
     )

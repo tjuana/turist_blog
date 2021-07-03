@@ -7,7 +7,8 @@ const defaultState = {
 }
 
 export default (state = defaultState, {
-    payload
+    payload,
+    type
 }) => {
     switch (type) {
         case types.STARTING_REQUES: {
