@@ -1,27 +1,32 @@
 import 'regenerator-runtime/runtime'
-import React, { Suspense } from 'react'
+import React, { createContext } from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from '@emotion/react'
 import { Provider } from 'react-redux'
 
 import { store } from './__data__/store'
+import THEME from './styles/theme-colors'
+import { Applo } from './Applo'
 
 const theme = {
-    colors: "red"
-}
+    white: '#f8f9fa',
+    purple: '#8c81d8',
+    gold: '#ffd43b'
+  }
 
+export const ThemeWrapperContext = createContext(theme);
 
 const Application = () => {
+    console.log(theme)
     return (
-        <React.Fragment>
+        <ThemeWrapperContext.Provider value={props.theme}>
             <ThemeProvider theme={theme}>
                 <Provider store={store}>
-                    <h1 style={{color: theme.colors}}>LOL</h1>
+                    <Applo />
                 </Provider>
             </ThemeProvider>
-        </React.Fragment>
+        </ThemeWrapperContext.Provider>
     )
 }
-
 
 ReactDOM.render(<Application />, document.getElementById('app'))
