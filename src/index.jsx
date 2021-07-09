@@ -10,11 +10,9 @@ const theme = {
 
 const Application = () => {
     return (
-        <React.Fragment>
-                    <ThemeProvider theme={theme}>
-                        <h1 style={{color: theme.colors}}>LOL</h1>
-                    </ThemeProvider>
-        </React.Fragment>
+        <ThemeProvider theme={THEME.MORNING}>
+            <Main />
+        </ThemeProvider>
     )
 }
 
