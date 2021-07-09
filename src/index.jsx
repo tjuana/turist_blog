@@ -1,22 +1,16 @@
 import 'regenerator-runtime/runtime'
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from '@emotion/react'
-
-const theme = {
-    colors: "red"
-}
-
+import THEME from './styles/theme-colors'
+import { Main } from './components/Main'
 
 const Application = () => {
     return (
-        <React.Fragment>
-                    <ThemeProvider theme={theme}>
-                        <h1 style={{color: theme.colors}}>LOL</h1>
-                    </ThemeProvider>
-        </React.Fragment>
+        <ThemeProvider theme={THEME}>
+            <Main />
+        </ThemeProvider>
     )
 }
-
 
 ReactDOM.render(<Application />, document.getElementById('app'))
