@@ -10,7 +10,7 @@ import { Main } from './components/Main'
 
 const Application = () => {
     return (
-        <ThemeProvider theme={THEME}>
+        <ThemeProvider theme={THEME.MORNING}>
             <Main />
         </ThemeProvider>
     )
