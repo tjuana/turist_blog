@@ -1,12 +1,9 @@
 import 'regenerator-runtime/runtime'
-import React, { Suspense } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom'
 import { ThemeProvider } from '@emotion/react'
-
-const theme = {
-    colors: "red"
-}
-
+import THEME from './styles/theme-colors'
+import { Main } from './components/Main'
 
 const Application = () => {
     return (
@@ -15,6 +12,5 @@ const Application = () => {
         </ThemeProvider>
     )
 }
-
 
 ReactDOM.render(<Application />, document.getElementById('app'))
