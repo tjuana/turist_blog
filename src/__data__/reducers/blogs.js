@@ -3,7 +3,9 @@ import * as types from '../action-types'
 const defaultState = {
     blogs: {
         /* Здесь размещаются блоги в разбивке по категориям наверно */
-    }
+    },
+    loaded: false
+
 }
 
 export default (state = defaultState, {
@@ -21,14 +23,15 @@ export default (state = defaultState, {
         case types.DATA_LOADED: {
             return {
                 ...state,
-                blogs: payload,
-                loadingPlaces: false
+                posts: payload,
+                loadingPlaces: false,
+                loaded: true
             }
         }
         case types.DATA_ERROR: {
             return {
                 ...state,
-                loading: false,
+                loaded: false,
                 error
             }
         }

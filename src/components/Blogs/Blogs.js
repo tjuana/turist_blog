@@ -1,30 +1,27 @@
- import React, { Component } from 'react'
+ import React, { useEffect, useState } from 'react'
+ import { connect } from 'react-redux'
  import { Link } from 'react-router-dom'
+ import { actions, selectors } from '../../__data__'
  import BlogItem from './BlogItem'
  import axios from 'axios'
  
- export class Blogs extends Component {
-     state = {
-         blogs: [],
-         isLoaded: false
-     }
-     componentDidMount() {
-         axios.get('/wp-json/wp/v2/blogs')
-         .then(res => this.setState({
-             blogs: res.data,
-             isLoaded: true
-         }))
-         .catch(err => console.log(err))
-     }
+const Blogs = ({loadContent, blogs, loaded}) => {
+     const [isLoaded, setState] = useState(false)
+     const url = 'http://localhost:8000/wp-json/wp/v2/turists'
 
-     render() {
-         const { blogs, isLoaded } = this.state
+     useEffect(() => {
+         if (!loaded) {
+            loadContent(url)
+            setState(true)
+         }
+     }, [loadContent, isLoaded])
 
-         if (isLoaded) {
+         if (loaded) {
+
          return (
              <div>
-                <Link to='/'> go back </Link>
-                 { blogs.map( blog => (
+                <Link to='/main'> go back </Link>
+                 {blogs.map( blog => (
                      <BlogItem
                         blog={blog}
                         key={blog.id}
@@ -36,7 +33,14 @@
          
          return <h3>Loading...</h3>
      }
- }
- 
- export default Blogs
- 
+
+const mapStateToProps = (state) => ({
+    blogs: selectors.getData(state),
+    loaded: selectors.getLoading(state),
+})
+
+const mapDispatchToProps = {
+    loadContent: actions.loadContent
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Blogs)
