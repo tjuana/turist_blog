@@ -33,7 +33,6 @@ export const CardStyled = styled.div`
     display: flex;
     flex-direction: column;
     width: ${IMAGE_WIDTH}px;
-    margin: 0 16px 72px;
 
     &:hover {
         ${ShadowStyled} {
