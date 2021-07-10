@@ -13,9 +13,9 @@ express()
     .use('/img', express.static('./stub/img/'))
 
 .use(webpackDevMiddleware(webpack(webpackConfig)))
-    .use('/app', (req, res) => {
+    .use('/', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'index.html'))
     })
     .listen(port, () => {
-        console.log(`Example app listening at http://localhost:${port}/app`)
+        console.log(`Example app listening at http://localhost:${port}/`)
     })

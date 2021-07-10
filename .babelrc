@@ -1,0 +1,8 @@
+{
+    "presets": [
+      "@nrwl/react/babel"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-class-properties"
+    ]
+  }
