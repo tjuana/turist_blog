@@ -17,12 +17,14 @@ export const Main = () => {
                 <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
                 <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
             </GradientStyle>
-            <Card icon='img/example.png' title="1" />
-            <Card icon='img/example.png' title="2" />
-            <Card icon='img/example.png' title="3" />
-            <Card icon='img/example.png' title="4" />
-            <Card icon='img/example.png' title="5" />
-            <Card icon='img/example.png' title="6" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
         </CenterStyled>
     )
 }
