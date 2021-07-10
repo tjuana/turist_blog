@@ -17,7 +17,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 options:  {
-                    babelrc: false,
+                    babelrc: true,
                     cacheDirectory: true,
                     presets: [
                         [

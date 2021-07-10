@@ -11,8 +11,7 @@ const webpackConfig = require('../webpack-config')
 
 express()
     .use('/img', express.static('./stub/img/'))
-
-.use(webpackDevMiddleware(webpack(webpackConfig)))
+    .use(webpackDevMiddleware(webpack(webpackConfig)))
     .use('/app', (req, res) => {
         res.sendFile(path.resolve(__dirname, 'index.html'))
     })
