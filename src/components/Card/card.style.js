@@ -2,6 +2,7 @@ import styled from '@emotion/styled'
 
 //TODO Вынести в файл с константами
 const IMAGE_WIDTH  = 208
+const IMAGE_GRADIENT_WIDTH = 288
 const BORDER_RADIUS_24 = 24
 
 //TODO: Изменить цвет 
@@ -28,11 +29,13 @@ export const ImageStyled = styled.img`
     z-index: 1;
 `
 
+//TODO Объединить позишион 
 export const CardStyled = styled.div`
     position: relative;
     display: flex;
     flex-direction: column;
     width: ${IMAGE_WIDTH}px;
+    margin: 0 16px 72px;
 
     &:hover {
         ${ShadowStyled} {
@@ -40,4 +43,11 @@ export const CardStyled = styled.div`
             filter: blur(36px);
         }
     }
+`
+export const GradientCardStyle = styled.div`
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 16px 52px;
+    width: ${IMAGE_GRADIENT_WIDTH}px;
 `

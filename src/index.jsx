@@ -8,16 +8,19 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import { store } from './__data__'
 import THEME from './styles/theme-colors'
 import Main from './components/Main'
+import { CenterStyled, MediaStyled } from './index.style'
 
 const Application = () => {
     return (
-        <BrowserRouter>
-            <ThemeProvider theme={THEME.MORNING}>
-                <Provider store={store}>
-                <Route exact path="/" component={Main} />
-                </ Provider>
-            </ThemeProvider>
-        </BrowserRouter>
+        <ThemeProvider theme={THEME.MORNING}>
+            <CenterStyled>
+                <MediaStyled>
+                    <Provider store={store}>
+                        <Main />
+                    </ Provider>
+                </MediaStyled>
+            </CenterStyled>
+        </ThemeProvider>
     )
 }
 
