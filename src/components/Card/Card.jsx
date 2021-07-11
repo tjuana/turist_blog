@@ -1,11 +1,17 @@
 import React from 'react'
-import { TitleStyled } from './card.style'
+import {
+    CardStyled,
+    ImageStyled,
+    ShadowStyled,
+    TitleStyled
+} from './card.style'
 
-export const Card = () => {
+export const Card = ({ icon, title }) => {
     return (
-        <div>
-        <img src='img/example.png' />
-        <TitleStyled>Card</TitleStyled>
-        </div>
+        <CardStyled>
+            <ImageStyled src={icon} />
+            <ShadowStyled src={icon} />
+            <TitleStyled>{title}</TitleStyled>
+        </CardStyled>
     )
 }

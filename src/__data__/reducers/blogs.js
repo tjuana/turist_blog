@@ -1,7 +1,7 @@
 import * as types from '../action-types'
 
 const defaultState = {
-    blogs: {
+    posts: {
         /* Здесь размещаются блоги в разбивке по категориям наверно */
     },
     loaded: false
@@ -33,6 +33,13 @@ export default (state = defaultState, {
                 ...state,
                 loaded: false,
                 error
+            }
+        }
+        case types.LOAD_IMG: {
+            return {
+                ...state,
+                ...posts,
+                imgUrl: payload
             }
         }
         default:

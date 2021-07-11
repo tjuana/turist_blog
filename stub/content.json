@@ -1,0 +1,149 @@
+{
+    "statusCode": "0",
+    "turists": [
+    {
+        "id": 10,
+        "date": "2021-07-10T12:56:31",
+        "date_gmt": "2021-07-10T09:56:31",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=10"
+        },
+        "modified": "2021-07-10T15:41:42",
+        "modified_gmt": "2021-07-10T12:41:42",
+        "slug": "%d0%ba%d0%b0%d0%ba-%d1%81%d0%be%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%85%d0%be%d0%b4%d0%bd%d1%8b%d0%b9-%d1%80%d1%8e%d0%ba%d0%b7%d0%b0%d0%ba-%d1%83%d0%bf%d0%b0%d0%ba%d0%be%d0%b2%d1%8b",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/%d0%ba%d0%b0%d0%ba-%d1%81%d0%be%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%85%d0%be%d0%b4%d0%bd%d1%8b%d0%b9-%d1%80%d1%8e%d0%ba%d0%b7%d0%b0%d0%ba-%d1%83%d0%bf%d0%b0%d0%ba%d0%be%d0%b2%d1%8b/",
+        "title": {
+            "rendered": "Как собрать походный рюкзак — упаковываем туриста правильно"
+        },
+        "content": {
+            "rendered": "\n<p>Встретив бывалого туриста, вы тут же понимаете, что он турист… Что его выдает и чем он отличается от других прохожих, помимо сильного загара и пыльных ботинок? Правильно — огромный увесистый рюкзак за плечами. Походный рюкзак — незаменимый атрибут любого путешествия, от правильной организации и укладки которого на 20 — 30% зависит успех всего похода.</p>\n\n\n\n<p>Hiking решил детально разложить всё по полочкам и рассказать, как правильно собирать походный рюкзак и на какие нюансы следует учитывать при этой процедуре, которую бывалые путешественники называют «наукой».</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Встретив бывалого туриста, вы тут же понимаете, что он турист… Что его выдает и чем он отличается от других прохожих, помимо сильного загара и пыльных ботинок? Правильно — огромный увесистый рюкзак за плечами. Походный рюкзак — незаменимый атрибут любого путешествия, от правильной организации и укладки которого на 20 — 30% зависит успех всего похода. Hiking&hellip; <a class=\"more-link\" href=\"http://localhost:8000/turist/%d0%ba%d0%b0%d0%ba-%d1%81%d0%be%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d0%bf%d0%be%d1%85%d0%be%d0%b4%d0%bd%d1%8b%d0%b9-%d1%80%d1%8e%d0%ba%d0%b7%d0%b0%d0%ba-%d1%83%d0%bf%d0%b0%d0%ba%d0%be%d0%b2%d1%8b/\">Читать далее <span class=\"screen-reader-text\">Как собрать походный рюкзак — упаковываем туриста правильно</span></a></p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 11,
+        "template": "",
+        "acf": {
+            "publisher": "Johny be good"
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/10"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/11"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=10"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "date": "2021-07-10T12:55:13",
+        "date_gmt": "2021-07-10T09:55:13",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=8"
+        },
+        "modified": "2021-07-10T15:41:26",
+        "modified_gmt": "2021-07-10T12:41:26",
+        "slug": "%d0%be%d0%b4%d0%bd%d0%be%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d1%8b%d0%b9-%d0%bf%d0%be%d1%85%d0%be%d0%b4-%d1%87%d1%82%d0%be-%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d1%81-%d1%81%d0%be%d0%b1%d0%be%d0%b9-%d0%b8-%d0%ba",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/%d0%be%d0%b4%d0%bd%d0%be%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d1%8b%d0%b9-%d0%bf%d0%be%d1%85%d0%be%d0%b4-%d1%87%d1%82%d0%be-%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d1%81-%d1%81%d0%be%d0%b1%d0%be%d0%b9-%d0%b8-%d0%ba/",
+        "title": {
+            "rendered": "Однодневный поход: что брать с собой и как знать меру?"
+        },
+        "content": {
+            "rendered": "\n<p>Отличная погода, пара-тройка выходных дней и хорошая компания — похоже, все звёзды сошлись, и теперь вам ничто не мешает отправиться в короткий поход на природу для приятного отдыха. Но тут же возникает резонный вопрос — что взять с собой в однодневный поход: как не перегрузить рюкзак, что понадобится из еды и одежды, и как организовать такую вылазку с детьми. Hiking подготовил подробное руководство по однодневным походам. Импровизированный гид поможет вам максимально быстро и правильно подготовить походный рюкзак и закупиться всем необходимым.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Отличная погода, пара-тройка выходных дней и хорошая компания — похоже, все звёзды сошлись, и теперь вам ничто не мешает отправиться в короткий поход на природу для приятного отдыха. Но тут же возникает резонный вопрос — что взять с собой в однодневный поход: как не перегрузить рюкзак, что понадобится из еды и одежды, и как организовать&hellip; <a class=\"more-link\" href=\"http://localhost:8000/turist/%d0%be%d0%b4%d0%bd%d0%be%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d1%8b%d0%b9-%d0%bf%d0%be%d1%85%d0%be%d0%b4-%d1%87%d1%82%d0%be-%d0%b1%d1%80%d0%b0%d1%82%d1%8c-%d1%81-%d1%81%d0%be%d0%b1%d0%be%d0%b9-%d0%b8-%d0%ba/\">Читать далее <span class=\"screen-reader-text\">Однодневный поход: что брать с собой и как знать меру?</span></a></p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 9,
+        "template": "",
+        "acf": {
+            "publisher": "ABC Publishing"
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/8"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/9"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=8"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    }
+]
+}

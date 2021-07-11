@@ -17,7 +17,7 @@ module.exports = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 options:  {
-                    babelrc: false,
+                    babelrc: true,
                     cacheDirectory: true,
                     presets: [
                         [
@@ -110,7 +110,11 @@ module.exports = {
             }
         ]
     },
-
+    // devServer: {
+    //     contentBase: path.join(__dirname, 'dist'),
+    //     compress: true,
+    //     port: 9000,
+    // },
     context: cwd,
 
     output: {

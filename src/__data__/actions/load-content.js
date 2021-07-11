@@ -12,7 +12,7 @@ export const loadContent = (url) => async (dispatch, getState) => {
             type: types.DATA_LOADED,
             payload: data
         })
-
+        console.log(getState())
 
     } catch (errorPlaces) {
         console.error(errorPlaces)

@@ -6,10 +6,10 @@ export const loadImg = (url) => async (dispatch, getState) => {
     try {
 
         const response = await axios.get(url)
-        const data = response?.data || []
+        const data = response?.data.media_details.sizes.full.source_url || ''
 
         dispatch({
-            type: types.DATA_LOADED,
+            type: types.LOAD_IMG,
             payload: data
         })
 

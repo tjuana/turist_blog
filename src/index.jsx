@@ -7,16 +7,14 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import { store } from './__data__'
 import THEME from './styles/theme-colors'
-import { Main } from './components/Main'
-import Blogs from './components/Blogs/Blogs'
+import Main from './components/Main'
 
 const Application = () => {
     return (
         <BrowserRouter>
             <ThemeProvider theme={THEME.MORNING}>
                 <Provider store={store}>
-                <Route exact path="/main" component={Main} />
-                <Route exact path="/blogs" component={Blogs} />
+                <Route exact path="/" component={Main} />
                 </ Provider>
             </ThemeProvider>
         </BrowserRouter>
