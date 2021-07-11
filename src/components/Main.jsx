@@ -1,15 +1,21 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux'
 import { CenterStyled } from '../index.style';
-import { Card } from './Card/Card';
+import Card from './Card/Card';
 import { GradientCard } from './Card/GradientCard';
 import { Header } from './Header/Header';
 import { GradientStyle } from './main.style';
 
 import { actions, selectors } from '../__data__'
 
-const Main = ({ loadContent, loaded, posts }) => {
-    const url = 'http://localhost:8000/wp-json/wp/v2/turists'
+// PropTypes
+const Main = ({
+    loadContent,
+    loaded,
+    posts,
+    firstPosts
+}) => {
+    const url = '/wp-json/wp/v2/turists'
 
     useEffect(() => {
         if (!loaded) {
@@ -27,15 +33,19 @@ const Main = ({ loadContent, loaded, posts }) => {
         <CenterStyled>
             <GradientStyle>
                 <Header />
-                {/* Из массива должно браться первых три элемента */}
-                <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+                {firstPosts.map((blog) => (
+                    <GradientCard
+                        title={blog.title.rendered}
+                        icon={blog.imgUrl}
+                        featuredMedia={blog.featured_media}
+                        id={blog.id}
+                    />
+                ))}
             </GradientStyle>
             {posts.map((blog) => (
                 <Card
                     title={blog.title.rendered}
-                    icon='img/example.png'
+                    icon={blog.imgUrl}
                     featuredMedia={blog.featured_media}
                     id={blog.id}
                 />
@@ -46,6 +56,7 @@ const Main = ({ loadContent, loaded, posts }) => {
 
 const mapStateToProps = (state) => ({
     posts: selectors.getData(state),
+    firstPosts: selectors.getFirstThreePosts(state),
     loaded: selectors.getLoading(state),
 })
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { connect } from 'react-redux'
 import {
     CardStyled,
     ImageStyled,
@@ -6,7 +7,21 @@ import {
     TitleStyled
 } from './card.style'
 
-export const Card = ({ icon, title }) => {
+import { actions, selectors } from '../../__data__'
+
+const Card = ({
+    icon,
+    title,
+    loadImg,
+    featuredMedia,
+    id
+}) => {
+    const [imgUrl, setImgUrl] = useState()
+
+    useEffect(() => {
+        loadImg(featuredMedia, id)
+    }, [loadImg, featuredMedia])
+
     return (
         <CardStyled>
             <ImageStyled src={icon} />
@@ -15,3 +30,13 @@ export const Card = ({ icon, title }) => {
         </CardStyled>
     )
 }
+
+const mapStateToProps = (state) => ({
+    // imgLoad: selectors.getImgLoad(state),
+})
+
+const mapDispatchToProps = {
+    loadImg: actions.loadImg
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Card)

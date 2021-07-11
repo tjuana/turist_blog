@@ -3,6 +3,7 @@ import * as types from '../action-types'
 const defaultState = {
     posts: {
         /* Здесь размещаются блоги в разбивке по категориям наверно */
+        imgLoad: false
     },
     loaded: false
 
@@ -10,7 +11,8 @@ const defaultState = {
 
 export default (state = defaultState, {
     payload,
-    type
+    type,
+    id
 }) => {
     switch (type) {
         case types.STARTING_REQUES: {
@@ -36,11 +38,12 @@ export default (state = defaultState, {
             }
         }
         case types.LOAD_IMG: {
-            return {
-                ...state,
-                ...posts,
-                imgUrl: payload
-            }
+            // нужно к каждому посту добавить imgUrl, я чет  хуевый программист
+            // return {
+            //     ...state,
+            //     imgUrl: payload,
+            //     imgLoad: true
+            // }
         }
         default:
             return state

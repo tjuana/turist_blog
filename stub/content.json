@@ -1,6 +1,292 @@
-{
-    "statusCode": "0",
-    "turists": [
+[
+    {
+        "id": 22,
+        "date": "2021-07-11T19:06:02",
+        "date_gmt": "2021-07-11T16:06:02",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=22"
+        },
+        "modified": "2021-07-11T20:12:03",
+        "modified_gmt": "2021-07-11T17:12:03",
+        "slug": "15-%d0%bb%d1%83%d1%87%d1%88%d0%b8%d1%85-%d1%82%d0%b5%d1%80%d0%bc%d0%be%d1%81%d0%be%d0%b2-%d0%b4%d0%bb%d1%8f-%d1%87%d0%b0%d1%8f-%d0%b8-%d0%b5%d0%b4%d1%8b-%d1%81%d1%82%d0%be%d0%b8%d1%82-%d0%bb%d0%b8",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/15-%d0%bb%d1%83%d1%87%d1%88%d0%b8%d1%85-%d1%82%d0%b5%d1%80%d0%bc%d0%be%d1%81%d0%be%d0%b2-%d0%b4%d0%bb%d1%8f-%d1%87%d0%b0%d1%8f-%d0%b8-%d0%b5%d0%b4%d1%8b-%d1%81%d1%82%d0%be%d0%b8%d1%82-%d0%bb%d0%b8/",
+        "title": {
+            "rendered": "15 лучших термосов для чая и еды. Стоит ли переплачивать?"
+        },
+        "content": {
+            "rendered": "\n<p>Они созданы, чтобы хранить тепло чая, держать прохладу воды. Рассмотрим лучшие модели на любой вкус и цвет.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Они созданы, чтобы хранить тепло чая, держать прохладу воды. Рассмотрим лучшие модели на любой вкус и цвет.</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 23,
+        "template": "",
+        "acf": {
+            "publisher": ""
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/22"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/23"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=22"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "date": "2021-07-11T19:05:35",
+        "date_gmt": "2021-07-11T16:05:35",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=21"
+        },
+        "modified": "2021-07-11T20:12:29",
+        "modified_gmt": "2021-07-11T17:12:29",
+        "slug": "%d1%87%d1%82%d0%be-%d0%b2%d0%b7%d1%8f%d1%82%d1%8c-%d1%81-%d1%81%d0%be%d0%b1%d0%be%d0%b9-%d0%b2-%d0%bf%d0%be%d1%85%d0%be%d0%b4-%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d0%bd%d0%b5%d0%be%d0%b1%d1%85%d0%be",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/%d1%87%d1%82%d0%be-%d0%b2%d0%b7%d1%8f%d1%82%d1%8c-%d1%81-%d1%81%d0%be%d0%b1%d0%be%d0%b9-%d0%b2-%d0%bf%d0%be%d1%85%d0%be%d0%b4-%d1%81%d0%bf%d0%b8%d1%81%d0%be%d0%ba-%d0%bd%d0%b5%d0%be%d0%b1%d1%85%d0%be/",
+        "title": {
+            "rendered": "Что взять с собой в поход. Список необходимых вещей"
+        },
+        "content": {
+            "rendered": "\n<p>Треск костра, приятная ломота в теле от десятка-другого преодоленных километров, бодрящий воздух и желание поскорее встретить рассвет, чтобы дальше продолжить</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Треск костра, приятная ломота в теле от десятка-другого преодоленных километров, бодрящий воздух и желание поскорее встретить рассвет, чтобы дальше продолжить</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 24,
+        "template": "",
+        "acf": {
+            "publisher": ""
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/21"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/24"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=21"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "date": "2021-07-11T19:05:00",
+        "date_gmt": "2021-07-11T16:05:00",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=19"
+        },
+        "modified": "2021-07-11T19:05:00",
+        "modified_gmt": "2021-07-11T16:05:00",
+        "slug": "%d0%ba%d0%b0%d0%ba%d0%be%d0%b9-%d1%80%d1%8e%d0%ba%d0%b7%d0%b0%d0%ba-%d1%83-%d0%b2%d0%b5%d0%b4%d1%83%d1%89%d0%b8%d1%85-%d0%be%d1%80%d0%bb%d0%b0-%d0%b8-%d1%80%d0%b5%d1%88%d0%ba%d0%b8",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/%d0%ba%d0%b0%d0%ba%d0%be%d0%b9-%d1%80%d1%8e%d0%ba%d0%b7%d0%b0%d0%ba-%d1%83-%d0%b2%d0%b5%d0%b4%d1%83%d1%89%d0%b8%d1%85-%d0%be%d1%80%d0%bb%d0%b0-%d0%b8-%d1%80%d0%b5%d1%88%d0%ba%d0%b8/",
+        "title": {
+            "rendered": "Какой рюкзак у ведущих «Орла и Решки»?"
+        },
+        "content": {
+            "rendered": "\n<p>Внимание, много картинок!</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Внимание, много картинок!</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 20,
+        "template": "",
+        "acf": {
+            "publisher": ""
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/19"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/20"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=19"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "date": "2021-07-11T19:04:04",
+        "date_gmt": "2021-07-11T16:04:04",
+        "guid": {
+            "rendered": "http://localhost:8000/?post_type=turist&#038;p=17"
+        },
+        "modified": "2021-07-11T19:04:04",
+        "modified_gmt": "2021-07-11T16:04:04",
+        "slug": "%d0%bf%d0%b0%d0%bb%d0%b0%d1%82%d0%ba%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b7%d0%b8%d0%bc%d0%bd%d0%b5%d0%b3%d0%be-%d0%bf%d0%be%d1%85%d0%be%d0%b4%d0%b0-%d0%bd%d0%b5-%d0%bc%d0%b8%d1%84-%d0%b0-%d1%80",
+        "status": "publish",
+        "type": "turist",
+        "link": "http://localhost:8000/turist/%d0%bf%d0%b0%d0%bb%d0%b0%d1%82%d0%ba%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b7%d0%b8%d0%bc%d0%bd%d0%b5%d0%b3%d0%be-%d0%bf%d0%be%d1%85%d0%be%d0%b4%d0%b0-%d0%bd%d0%b5-%d0%bc%d0%b8%d1%84-%d0%b0-%d1%80/",
+        "title": {
+            "rendered": "Палатка для зимнего похода — не миф, а реальность"
+        },
+        "content": {
+            "rendered": "\n<p>Человек, хотя бы раз вкусивший всю прелесть похода, больше не представляет жизни без увлекательных путешествий и спонтанных дальних поездок. И то, что для бывалого путешественника — обычное дело, для начинающего любителя походов — настоящее испытание на прочность.</p>\n",
+            "protected": false
+        },
+        "excerpt": {
+            "rendered": "<p>Человек, хотя бы раз вкусивший всю прелесть похода, больше не представляет жизни без увлекательных путешествий и спонтанных дальних поездок. И то, что для бывалого путешественника — обычное дело, для начинающего любителя походов — настоящее испытание на прочность.</p>\n",
+            "protected": false
+        },
+        "author": 1,
+        "featured_media": 18,
+        "template": "",
+        "acf": {
+            "publisher": ""
+        },
+        "_links": {
+            "self": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists/17"
+                }
+            ],
+            "collection": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/turists"
+                }
+            ],
+            "about": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/types/turist"
+                }
+            ],
+            "author": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/users/1"
+                }
+            ],
+            "wp:featuredmedia": [
+                {
+                    "embeddable": true,
+                    "href": "http://localhost:8000/wp-json/wp/v2/media/18"
+                }
+            ],
+            "wp:attachment": [
+                {
+                    "href": "http://localhost:8000/wp-json/wp/v2/media?parent=17"
+                }
+            ],
+            "curies": [
+                {
+                    "name": "wp",
+                    "href": "https://api.w.org/{rel}",
+                    "templated": true
+                }
+            ]
+        }
+    },
     {
         "id": 10,
         "date": "2021-07-10T12:56:31",
@@ -146,4 +432,3 @@
         }
     }
 ]
-}
