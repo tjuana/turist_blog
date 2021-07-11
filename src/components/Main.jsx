@@ -14,16 +14,16 @@ export const Main = () => {
                 <Header />
                 {/* Из массива должно браться первых три элемента */}
                 <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+                <GradientCard icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+                <GradientCard icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
             </GradientStyle>
             <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
             <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
             <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+            <Card icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
             <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
         </CenterStyled>
     )

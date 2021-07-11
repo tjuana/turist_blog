@@ -1,10 +1,14 @@
 import React from 'react'
-import { HeaderStyle } from './header.style'
+import { ButtonStyle, HeaderStyle, LogoStyle, MarginButtonStyle, SearchStyle } from './header.style'
 
+//TODO Текстовки
 export const Header = () => {
     return (
         <HeaderStyle>
-            ТУТ ТИПА БУДЕТ ХЕДЕР
+            <LogoStyle src="img/Logo.svg" />
+            <MarginButtonStyle>В походе</MarginButtonStyle>
+            <ButtonStyle>В городе</ButtonStyle>
+            <SearchStyle />
         </HeaderStyle>
     )
 }
