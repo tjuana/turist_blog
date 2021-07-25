@@ -23,10 +23,10 @@ const Main = ({
 
     useEffect(() => {
         if (!auth) {
-            authorization(`${authUrl}`)
+            authorization(`${localUrl}${authUrl}`)
         }
         if (!loaded && auth) {
-           loadContent(`${contentUrl}`)
+           loadContent(`${localUrl}${contentUrl}`)
         }
     }, [loadContent, loaded, auth])
 

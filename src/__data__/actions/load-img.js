@@ -1,8 +1,6 @@
 import axios from 'axios'
 import * as types from '../action-types'
 
-const urlImg = 'http://localhost:8000/wp-json/wp/v2/media/'
-
 export const loadImg = (url, id) => async (dispatch, getState) => {
 
     try {
