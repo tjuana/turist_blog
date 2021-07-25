@@ -13,16 +13,16 @@ const Card = ({
     icon,
     title,
     loadImg,
-    featuredMedia,
+    imgUrl,
     id
 }) => {
-    const [imgUrl, setImgUrl] = useState()
 
     useEffect(() => {
-        loadImg(featuredMedia, id)
-    }, [loadImg, featuredMedia])
+            loadImg(icon, id)
+    }, [loadImg])
 
     return (
+        // нужно использовать 2 размера картинки
         <CardStyled>
             <ImageStyled src={icon} />
             <ShadowStyled src={icon} />

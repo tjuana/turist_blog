@@ -33,4 +33,5 @@ yarn-error.log*
 .gitconfig
 ./dist
 .npmrc
-./server/*
+.server/.server/.htaccess
+.server/.server/*

@@ -1,18 +1,20 @@
 import * as types from '../action-types'
 
 const defaultState = {
-    posts: {
+    posts: [
         /* Здесь размещаются блоги в разбивке по категориям наверно */
-        imgLoad: false
-    },
-    loaded: false
+    ],
+    userData: {},
+    loaded: false,
+    auth: false,
 
 }
 
 export default (state = defaultState, {
     payload,
     type,
-    id
+    imgId,
+    auth
 }) => {
     switch (type) {
         case types.STARTING_REQUES: {
@@ -38,12 +40,43 @@ export default (state = defaultState, {
             }
         }
         case types.LOAD_IMG: {
-            // нужно к каждому посту добавить imgUrl, я чет  хуевый программист
-            // return {
-            //     ...state,
-            //     imgUrl: payload,
-            //     imgLoad: true
-            // }
+            return {
+                ...state,
+                posts : state.posts.reduce((memo, blog, index) => {
+                    const {
+                        id,
+                        date,
+                        modified,
+                        link,
+                        title,
+                        content,
+                        author,
+                        featured_media,
+                        imgUrl
+                    } = blog
+
+                    memo[index] = 
+                    {
+                        id,
+                        date,
+                        modified,
+                        link,
+                        title,
+                        content,
+                        author,
+                        featured_media,
+                        imgUrl: (imgId === id) ? payload : imgUrl
+                    }
+                    return memo
+                }, [])
+            }
+        }
+        case types.AUTH: {
+            return {
+                ...state,
+                userData: payload,
+                auth
+            }
         }
         default:
             return state

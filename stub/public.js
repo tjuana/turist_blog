@@ -10,7 +10,6 @@ module.exports = express.Router()
         setTimeout(() => {
             const ownContent = JSON.parse(JSON.stringify(content))
             res.send(ownContent)
-            console.log(ownContent)
 
         }, 1000)
     })

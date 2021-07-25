@@ -3,7 +3,7 @@ const path = require('path')
 const cwd = process.cwd()
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry: 'src/index.jsx',
 
     resolve: {
@@ -66,43 +66,6 @@ module.exports = {
                                     overrideBrowserslist: ['last 2 versions', '> 1%', 'not ie < 11'],
                                     grid: true
                                 })
-                            ]
-                        }
-                    }
-                ]
-            },
-            {
-                test: /\.css$/,
-                include: /[\\\/]node_modules[\\\/]@sbol[\\\/]lib\.ui[\\\/]core/,
-                use: [
-                    {
-                        loader: 'style-loader'
-                    },
-                    {
-                        loader: 'css-loader',
-                        options: {
-                            modules: true,
-                            importLoaders: 1,
-                            localsConvention: 'camelCase'
-                        }
-                    },
-                    {
-                        loader: 'postcss-loader',
-                        options: {
-                            plugins: [
-                                require('postcss-import'),
-                                require('postcss-for'),
-                                require('postcss-custom-properties')({ preserve: false }),
-                                require('postcss-custom-media')({ preserve: false }),
-                                require('postcss-nested'),
-                                require('postcss-color-function'),
-                                require('autoprefixer')({
-                                    overrideBrowserslist: ['last 2 versions', '> 1%', 'not ie < 11'],
-                                    grid: true
-                                }),
-                                require('postcss-calc'),
-                                require('postcss-discard-comments'),
-                                require('cssnano')({ preset: 'default' })
                             ]
                         }
                     }
