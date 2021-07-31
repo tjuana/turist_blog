@@ -31,3 +31,7 @@ yarn-error.log*
 *.code-workspace
 /coverage/*
 .gitconfig
+./dist
+.npmrc
+.server/.server/.htaccess
+.server/.server/*
