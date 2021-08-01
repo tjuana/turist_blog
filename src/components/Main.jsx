@@ -1,30 +1,76 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux'
 import { CenterStyled } from '../index.style';
 import { GradientStyled } from '../components/main.style'
 import { Card } from './Card/Card';
 import { GradientCard } from './Card/GradientCard';
 import { Header } from './Header/Header';
 
-export const Main = () => {
+import { actions, selectors } from '../__data__'
 
+// PropTypes
+const Main = ({
+    loadContent,
+    loaded,
+    posts,
+    firstPosts,
+    authorization,
+    auth
+}) => {
+    const localUrl = 'http://localhost:8000/'
+    const authUrl = 'wp-json/jwt-auth/v1/token'
+    const contentUrl = 'wp-json/wp/v2/turists'
+
+    useEffect(() => {
+        if (!auth) {
+            authorization(`${localUrl}${authUrl}`)
+        }
+        if (!loaded && auth) {
+           loadContent(`${localUrl}${contentUrl}`)
+        }
+    }, [loadContent, loaded, auth])
+
+    if (!loaded) {
+        return (
+            <span>Loading...</span>
+        )
+    }
     return(
         <CenterStyled>
-            {/* Redux */}
-            <GradientStyled>
+            <GradientStyle>
                 <Header />
-                {/* Из массива должно браться первых три элемента */}
-                <GradientCard icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-                <GradientCard icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            </GradientStyled>
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example2.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example3.jpeg' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
-            <Card icon='img/example.png' title="Как мы потерпели фиаско при подборе лодки на Эквадоре" />
+                {firstPosts.map((blog) => (
+                    <GradientCard
+                        key={blog.id}
+                        title={blog.title.rendered}
+                        icon={blog.imgUrl}
+                        id={blog.id}
+                    />
+                ))}
+            </GradientStyle>
+            {posts.map((blog) => (
+                <Card
+                    key={blog.id}
+                    title={blog.title.rendered}
+                    icon={blog.imgUrl}
+                    featuredMedia={blog.featured_media}
+                    id={blog.id}
+                />
+            ))}
         </CenterStyled>
     )
 }
+
+const mapStateToProps = (state) => ({
+    posts: selectors.getData(state),
+    firstPosts: selectors.getFirstThreePosts(state),
+    loaded: selectors.getLoading(state),
+    auth: selectors.getAuth(state),
+})
+
+const mapDispatchToProps = {
+    loadContent: actions.loadContent,
+    authorization: actions.authorization,
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Main)
