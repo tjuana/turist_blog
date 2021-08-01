@@ -6,7 +6,7 @@ export const CenterStyled = styled.div`
     justify-content: center;
 `
 
-//Тут типа будет медиа когда будет адаптив
+// TODO Тут типа будет медиа когда будет адаптив
 export const MediaStyled = styled.div`
     @media (min-width: 1052px) {
         width: 1052px;

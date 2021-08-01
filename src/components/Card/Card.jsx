@@ -1,4 +1,6 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+
 import {
     CardStyled,
     ImageStyled,
@@ -14,4 +16,9 @@ export const Card = ({ icon, title }) => {
             <TitleStyled>{title}</TitleStyled>
         </CardStyled>
     )
+}
+
+Card.propTypes = {
+    icon: PropTypes.string,
+    title: PropTypes.string,
 }
