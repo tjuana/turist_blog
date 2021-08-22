@@ -35,3 +35,4 @@ yarn-error.log*
 .npmrc
 .server/.server/.htaccess
 .server/.server/*
+.server/*
