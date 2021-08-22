@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux'
 import { CenterStyled } from '../index.style';
-import Card from './Card/Card';
+import { Card } from './Card/Card';
 import { GradientCard } from './Card/GradientCard';
 import { Header } from './Header/Header';
 import { GradientStyle } from './main.style';
@@ -19,7 +19,7 @@ const Main = ({
 }) => {
     const localUrl = 'http://localhost:8000/'
     const authUrl = 'wp-json/jwt-auth/v1/token'
-    const contentUrl = 'wp-json/wp/v2/turists'
+    const contentUrl = 'wp-json/wp/v2/posts'
 
     useEffect(() => {
         if (!auth) {
@@ -35,6 +35,7 @@ const Main = ({
             <span>Loading...</span>
         )
     }
+
     return(
         <CenterStyled>
             <GradientStyle>
@@ -44,6 +45,7 @@ const Main = ({
                         key={blog.id}
                         title={blog.title.rendered}
                         icon={blog.imgUrl}
+                        mediaId={blog.featured_media}
                         id={blog.id}
                     />
                 ))}
@@ -53,8 +55,10 @@ const Main = ({
                     key={blog.id}
                     title={blog.title.rendered}
                     icon={blog.imgUrl}
-                    featuredMedia={blog.featured_media}
+                    mediaId={blog.featured_media}
                     id={blog.id}
+                    imgLoading={blog.imgLoaded}
+
                 />
             ))}
         </CenterStyled>

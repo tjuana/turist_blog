@@ -9,8 +9,10 @@ export const authorization = (url) => async (dispatch, getState) => {
         const requestOptions = {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({username: 'johny',
-            password: 'VpY&8%ncMJzpOec$%e'})
+            body: JSON.stringify({
+                username: 'johny',
+                password: 'VpY&8%ncMJzpOec$%e'
+            })
         }
 
         fetch(url, requestOptions)

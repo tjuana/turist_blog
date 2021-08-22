@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef } from 'react'
 import { connect } from 'react-redux'
 import {
     CardStyled,
@@ -9,22 +9,51 @@ import {
 
 import { actions, selectors } from '../../__data__'
 
-const Card = ({
-    icon,
+const CardComponent = ({
+    icon = 'img/example.png',
     title,
     loadImg,
     imgUrl,
-    id
+    id,
+    mediaId,
+    imgLoading
 }) => {
+    let img = useRef()
+
 
     useEffect(() => {
-            loadImg(icon, id)
+        if (mediaId !== 0 ) {
+            loadImg(icon, id, mediaId)
+        }
+
     }, [loadImg])
+
+    useEffect(() => {
+
+        if (!imgLoading) {
+            img.src = 'img/example2.png'
+        }
+
+    }, [imgLoading, img])
+
+
+
+    const onError = () => {
+        img.src = 'img/example2.png'
+    }
+
 
     return (
         // нужно использовать 2 размера картинки
         <CardStyled>
-            <ImageStyled src={icon} />
+            <ImageStyled 
+                srcSet={icon}
+                src={icon}
+                ref={img2 => img = img2}
+                alt=''
+                onError={onError} 
+                loading='lazy'
+            />
             <ShadowStyled src={icon} />
             <TitleStyled>{title}</TitleStyled>
         </CardStyled>
@@ -39,4 +68,4 @@ const mapDispatchToProps = {
     loadImg: actions.loadImg
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Card)
+export const Card = connect(mapStateToProps, mapDispatchToProps)(CardComponent)
