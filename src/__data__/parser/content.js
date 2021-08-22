@@ -2,7 +2,7 @@ import * as types from '../action-types'
 import { loadImg } from '../actions'
 
 export const contentParser = (data) =>
-    data?.reduce((memo, postObject, index) => {
+    data?.reduce((memo, blog, index) => {
 
         const {
             id,
@@ -13,20 +13,20 @@ export const contentParser = (data) =>
             content,
             author,
             featured_media,
-            _links
-        } = postObject
+            imgUrl
+        } = blog
 
         memo[index] = 
-            {
-                id,
-                date,
-                modified,
-                link,
-                title,
-                content,
-                author,
-                featured_media,
-                imgUrl: _links["wp:featuredmedia"][0].href
-            }
+        {
+            id,
+            date,
+            modified,
+            link,
+            title,
+            content,
+            author,
+            featured_media,
+            imgUrl: (imgId === id) ? payload : imgUrl
+        }
         return memo
     }, [])

@@ -19,7 +19,7 @@ const Main = ({
 }) => {
     const localUrl = 'http://localhost:8000/'
     const authUrl = 'wp-json/jwt-auth/v1/token'
-    const contentUrl = 'wp-json/wp/v2/turists'
+    const contentUrl = 'wp-json/wp/v2/posts'
 
     useEffect(() => {
         if (!auth) {
@@ -35,26 +35,30 @@ const Main = ({
             <span>Loading...</span>
         )
     }
+
     return(
         <CenterStyled>
-            <GradientStyle>
+            <GradientStyled>
                 <Header />
                 {firstPosts.map((blog) => (
                     <GradientCard
                         key={blog.id}
                         title={blog.title.rendered}
                         icon={blog.imgUrl}
+                        mediaId={blog.featured_media}
                         id={blog.id}
                     />
                 ))}
-            </GradientStyle>
+            </GradientStyled>
             {posts.map((blog) => (
                 <Card
                     key={blog.id}
                     title={blog.title.rendered}
                     icon={blog.imgUrl}
-                    featuredMedia={blog.featured_media}
+                    mediaId={blog.featured_media}
                     id={blog.id}
+                    imgLoading={blog.imgLoaded}
+
                 />
             ))}
         </CenterStyled>

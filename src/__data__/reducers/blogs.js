@@ -14,6 +14,7 @@ export default (state = defaultState, {
     payload,
     type,
     imgId,
+    imgloaded,
     auth
 }) => {
     switch (type) {
@@ -52,7 +53,8 @@ export default (state = defaultState, {
                         content,
                         author,
                         featured_media,
-                        imgUrl
+                        imgUrl,
+                        imgLoaded
                     } = blog
 
                     memo[index] = 
@@ -65,7 +67,8 @@ export default (state = defaultState, {
                         content,
                         author,
                         featured_media,
-                        imgUrl: (imgId === id) ? payload : imgUrl
+                        imgUrl: (imgId === id) ? payload : imgUrl,
+                        imgLoaded: imgloaded
                     }
                     return memo
                 }, [])

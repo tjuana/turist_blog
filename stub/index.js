@@ -3,7 +3,7 @@ const path = require('path')
 const express = require('express')
 const webpack = require('webpack')
 const webpackDevMiddleware = require('webpack-dev-middleware')
-const port = 8000
+const port = 1717
     // нужен json с контентом
 const content = require('./content')
 const imgContent = require('./img-responce')
