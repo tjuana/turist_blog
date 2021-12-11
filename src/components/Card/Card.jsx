@@ -61,10 +61,10 @@ const CardComponent = ({
     )
 }
 
-Card.propTypes = {
-    icon: PropTypes.string,
-    title: PropTypes.string,
-}
+// Card.propTypes = {
+//     icon: PropTypes.string,
+//     title: PropTypes.string,
+// }
 
 //Это точно нужно????
 const mapStateToProps = (state) => ({

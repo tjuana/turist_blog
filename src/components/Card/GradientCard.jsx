@@ -3,16 +3,17 @@ import {
     GradientCardStyled,
     GradientImageStyled,
     GradientShadowStyled,
-    TitleStyled
+    GradientTitleStyled,
+    GradientLinearStyled,
 } from './card.style'
 
 export const GradientCard = ({ icon, title }) => {
     return (
         <GradientCardStyled src = {icon}>
-            
+            <GradientLinearStyled />
             <GradientImageStyled src={icon} />
-            {/* <GradientShadowStyled src={icon} />  */}
-            {/* <TitleStyled>{title}</TitleStyled> */}
+            <GradientShadowStyled src={icon} /> 
+            <GradientTitleStyled>{title}</GradientTitleStyled>
         </GradientCardStyled>
     )
 }
