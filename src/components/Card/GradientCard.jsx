@@ -1,17 +1,19 @@
 import React from 'react'
 import {
-    GradientCardStyle,
-    ImageStyled,
-    ShadowStyled,
-    TitleStyled
+    GradientCardStyled,
+    GradientImageStyled,
+    GradientShadowStyled,
+    GradientTitleStyled,
+    GradientLinearStyled,
 } from './card.style'
 
 export const GradientCard = ({ icon, title }) => {
     return (
-        <GradientCardStyle>
-            <ImageStyled src={icon} />
-            <ShadowStyled src={icon} />
-            <TitleStyled>{title}</TitleStyled>
-        </GradientCardStyle>
+        <GradientCardStyled src = {icon}>
+            <GradientLinearStyled />
+            <GradientImageStyled src={icon} />
+            <GradientShadowStyled src={icon} /> 
+            <GradientTitleStyled>{title}</GradientTitleStyled>
+        </GradientCardStyled>
     )
 }
